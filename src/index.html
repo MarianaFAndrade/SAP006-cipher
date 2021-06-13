@@ -13,61 +13,38 @@
   <section id="textos">
     <h1>Bem-vinde ao seu Clube dos Segredos</h1>
     <div>Um site para você e sua amiga se divertirem criando mensagens em forma de códigos para se cominicar e também
-      decifrar mensagens que só vocês vão entender.
+      decifrar mensagens recebidas.
     </div>
   </section>
 
-  <section id="codificar">
-    <select number="números">
-      <option value="numeros">Escolha o deslocamento</option>
-      <option value="um">1</option>
-      <option value="dois">2</option>
-      <option value="três">3</option>
-      <option value="quatro">4</option>
-      <option value="cinco">5</option>
-      <option value="seis">6</option>
-      <option value="sete">7</option>
-      <option value="oito">8</option>
-      <option value="nove">9</option>
-      <option value="dez">10</option>
-      
+  <section id="codificarCodificar">
+      <input id="seletor1" type="number" min="1">
 
-    </select>
-    <div>
-      <label for="text1"> Insira o texto que você quer codificar:</label><br></br>
-      <textarea name="texto" id="text1" cols="30" rows="3" placeholder="Digite aqui"></textarea><br></br>
-    </div>
-    <div>
-      <div class="button">
-        <button id="butt" type="submit" name="myButton">Codificar</button><br></br>
-        <textarea name="texto" id="text1" cols="30" rows="3" placeholder="Digite aqui"></textarea>
+      <div id="mensagemTexto1">
+        <label> Insira abaixo o texto que você quer <b>codificar</b>:</label>
       </div>
+
+      <input id="textoInserido1" type="text" placeholder="Digite aqui">
+
+      <button id="botaoCodificar"  name="myButton">Codificar</button>
+
+      <input id="textoRecebido1" type="text" placeholder="Texto Codificado">
   </section>
 
-  <section id="decodificar">
-    <select number="números">
-      <option value="numeros">Escolha o deslocamento</option>
-      <option value="um">1</option>
-      <option value="dois">2</option>
-      <option value="três">3</option>
-      <option value="quatro">4</option>
-      <option value="cinco">5</option>
-      <option value="seis">6</option>
-      <option value="sete">7</option>
-      <option value="oito">8</option>
-      <option value="nove">9</option>
-      <option value="dez">10</option>
+  <section id="codificarDecodificar">
+      <input id="seletor2" type="number" min="1" max="33">
 
-    </select>
-    <div>
-      <label for="text1"> Insira o texto que você quer decodificar:</label><br></br>
-      <textarea name="texto" id="text1" cols="30" rows="3" placeholder="Digite aqui"></textarea><br></br>
+    <div id="mensagemTexto2">
+      <label> Insira abaixo o texto que você quer <b>decodificar</b>:</label>
     </div>
-    <div>
-      <div class="button">
-        <button id="butt" type="submit" name="myButton">Decodificar</button><br></br>
-        <textarea name="texto" id="text1" cols="30" rows="3" placeholder="Digite aqui"></textarea>
-      </div>
+
+    
+    <input id="textoInserido2" type="text" placeholder="Digite aqui">
+
+    <button id="botaoDecodificar" name="myButton">Decodificar</button>
+  
+    <input id="textoRecebido2" type="text" placeholder="Texto Codificado">
+  
   </section>
 
   <footer>
