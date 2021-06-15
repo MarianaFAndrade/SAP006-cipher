@@ -1,38 +1,58 @@
 const cipher = {
-  encode: function (chaveDeDesloc, string){
-    let entradaEncode = string.toUpperCase();
+  encode: function (chaveDeslocamentoEncode, mensagemEncode) {
+    if (!chaveDeslocamentoEncode || !mensagemEncode){
+      alert('Digite uma entrada válida');
+      throw new TypeError(['Digite uma entrada válida'])
+      }
+
     let cifrarMensagem = '';
 
-    for (let i = 0; i < entradaEncode.length; i++){
-      
-      let codigoAsc = entradaEncode[i].charCodeAt();
-      // console.log('codigoAsc:', codigoAsc);
+    for (let i = 0; i < mensagemEncode.length; i++) {
 
-      let encondeForm = ((codigoAsc - 65 + chaveDeDesloc) % 26) + 65;
-      // console.log('encondeForm:', encondeForm);
-      
-      cifrarMensagem += String.fromCharCode(encondeForm);
+      let codigoAsciiEncode = mensagemEncode[i].charCodeAt();
+
+      let formulaEncode = '';
+      if (codigoAsciiEncode >= 65 && codigoAsciiEncode <= 90) {
+        formulaEncode = (((codigoAsciiEncode - 65 + chaveDeslocamentoEncode) % 26) + 65);
+
+      } else if (codigoAsciiEncode >= 97 && codigoAsciiEncode <= 122) {
+        formulaEncode = (((codigoAsciiEncode - 97 + chaveDeslocamentoEncode) % 26) + 97);
+
+      } else if (codigoAsciiEncode >= 32 && codigoAsciiEncode <= 64 || codigoAsciiEncode >= 123 && codigoAsciiEncode <= 255) {
+        formulaEncode = (codigoAsciiEncode);
+
+      }
+      cifrarMensagem += String.fromCharCode(formulaEncode);
     }
     return cifrarMensagem;
+
   },
 
 
-  decode: function (chaveDeslocamentoDecode, string){
-    let entradaDecode = string.toUpperCase();
-    let decifraMensagem = '';
-
-    for (let i = 0; i < entradaDecode.length; i++){
-      
-      let codigoAscDecipher = entradaDecode[i].charCodeAt();
-      console.log('codigoAscDecipher:', codigoAscDecipher);
-
-      let decodeForm = ((codigoAscDecipher - 65 - chaveDeslocamentoDecode) % 26) + 65;
-      console.log('decodeForm:', decodeForm);
-
-      decifraMensagem += String.fromCharCode(decodeForm);
-
+  decode: function (chaveDeslocamentoDecode, mensagemdecode) {
+    if (!chaveDeslocamentoDecode || !mensagemdecode){
+      alert('Digite uma entrada válida');
+      throw new TypeError(['Digite uma entrada válida'])
     }
-    return decifraMensagem;
+    let decifrarMensagem = '';
+
+    for (let i = 0; i < mensagemdecode.length; i++) {
+
+      let codigoAsciiDecode = mensagemdecode[i].charCodeAt();
+
+      let formulaDecode = '';
+      if (codigoAsciiDecode >= 65 && codigoAsciiDecode <= 90) {
+        formulaDecode = (((codigoAsciiDecode - 90 - chaveDeslocamentoDecode) % 26) + 90);
+
+      } else if (codigoAsciiDecode >= 97 && codigoAsciiDecode <= 122) {
+        formulaDecode = (((codigoAsciiDecode - 122 - chaveDeslocamentoDecode) % 26) + 122);
+
+      } else if (codigoAsciiDecode >= 32 && codigoAsciiDecode <= 64 || codigoAsciiDecode >= 123 && codigoAsciiDecode <= 255) {
+        formulaDecode = (codigoAsciiDecode);
+      }
+      decifrarMensagem += String.fromCharCode(formulaDecode);
+    }
+    return decifrarMensagem;
   }
 };
 

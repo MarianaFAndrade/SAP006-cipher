@@ -10,40 +10,39 @@
 
 <body>
 
-  <section id="textos">
+  <section id="textoBemVindo">
     <h1>Bem-vinde ao seu Clube dos Segredos</h1>
-    <div>Um site para você e sua amiga se divertirem criando mensagens em forma de códigos para se cominicar e também
+    <div>
+      Um site para você e sua amiga se divertirem criando mensagens em forma de códigos para se comunicar e também
       decifrar mensagens recebidas.
     </div>
   </section>
 
-  <section id="codificarCodificar">
-      <input id="seletor1" type="number" min="1">
+  <section id="cifraEncode">
+      <input id="seletorInputEncode" type="number" min="1">
 
-      <div id="mensagemTexto1">
+      <div id="mensagemInsiraTextoEncode">
         <label> Insira abaixo o texto que você quer <b>codificar</b>:</label>
       </div>
 
-      <input id="textoInserido1" type="text" placeholder="Digite aqui">
+      <textarea id="inputTextoParaCodificar" placeholder="Digite aqui"  rows="5" cols="40"></textarea>
 
       <button id="botaoCodificar"  name="myButton">Codificar</button>
 
-      <input id="textoRecebido1" type="text" placeholder="Texto Codificado">
+      <textarea id="inputTextoCodificado" placeholder="Digite aqui"  rows="5" cols="40"></textarea>
   </section>
 
-  <section id="codificarDecodificar">
-      <input id="seletor2" type="number" min="1" max="33">
+  <section id="cifraDecode">
+      <input id="seletorInputDecode" type="number" min="1">
 
-    <div id="mensagemTexto2">
+    <div id="mensagemInsiraTextoDecode">
       <label> Insira abaixo o texto que você quer <b>decodificar</b>:</label>
     </div>
 
-    
-    <input id="textoInserido2" type="text" placeholder="Digite aqui">
+    <textarea id="inputTextoParaDecodificar" placeholder="Digite aqui"  rows="5" cols="40"></textarea>
 
-    <button id="botaoDecodificar" name="myButton">Decodificar</button>
-  
-    <input id="textoRecebido2" type="text" placeholder="Texto Codificado">
+      <button id="botaoDecodificar" name="myButton">Decodificar</button>
+    <textarea id="inputTextoDecodificado" placeholder="Digite aqui"  rows="5" cols="40"></textarea>
   
   </section>
 
