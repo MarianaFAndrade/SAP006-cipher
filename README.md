@@ -22,7 +22,7 @@ simples de cifrar uma mensagem. É um tipo de cifra por substituição, em que c
 letra do texto original é substituida por outra que se encontra há um número fixo 
 de posições (deslocamento) mais a frente do mesmo alfabeto. 
 
-![print-da-aplicacao](C:\Users\andra\LABORATÓRIA\SAP006-cipher\src\imagens)
+![print-da-aplicacao](print-da-aplicacao.PNG)
 
 ## 2. Sobre o tema e público do Projeto
 
