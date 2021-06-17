@@ -4,8 +4,8 @@ body {
     background-color: #c5c4c5;
     background-image: url(imagens/foto1.png);
     background-repeat: no-repeat;
-    background-position: 8% 20%;
-    background-size: 30%;
+    background-position: 1% 50%;
+    background-size: 40%;
     color: rgb(0, 0, 0);
    }
 
@@ -14,9 +14,9 @@ textarea{
 }
 
 #cifraEncode{
-    margin-right: 15%;
+    margin-right: 10%;
     margin-top: 1%;
-    margin-left: 60%;
+    margin-left: 40%;
     border-width:8px;
     border-style:double;
     border-color:white;
@@ -24,9 +24,9 @@ textarea{
     box-shadow: 2px 2px 3px white;
 }
 #cifraDecode{
-    margin-right: 15%;
+    margin-right: 10%;
     margin-top: 1%;
-    margin-left: 60%;
+    margin-left: 40%;
     border-width:8px;
     border-style:double;
     border-color:white;
@@ -35,10 +35,10 @@ textarea{
 }
 
 #textoBemVindo {
-    text-align: left;
-    margin-right: 15%;
-    margin-top: 3%;
-    margin-left: 60%;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-left: 40%;
     font-family:'Noto Sans SC', sans-serif;
     }
 
@@ -100,7 +100,7 @@ textarea{
     font-family:'Noto Sans SC', sans-serif;
 }
 #inputTextoCodificado{
-    text-align: justlefify;
+    text-align: justify;
     margin-right: 15%;
     margin-top: 1%;
     margin-left: 5%;
