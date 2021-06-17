@@ -1,3 +1,7 @@
+![Logo Clube](https://github.com/MarianaFAndrade/SAP006-cipher/blob/main/foto1.png)
+
+
+
 # Clube dos Segredos :information_desk_person: :computer:
 
 O clube dos Segredos é uma aplicação web para que usuários criem 
@@ -22,7 +26,7 @@ simples de cifrar uma mensagem. É um tipo de cifra por substituição, em que c
 letra do texto original é substituida por outra que se encontra há um número fixo 
 de posições (deslocamento) mais a frente do mesmo alfabeto. 
 
-![print-da-aplicacao](print-da-aplicacao.PNG)
+![print-da-aplicacao](https://github.com/MarianaFAndrade/SAP006-cipher/blob/main/print-da-aplicacao.png)
 
 ## 2. Sobre o tema e público do Projeto
 
