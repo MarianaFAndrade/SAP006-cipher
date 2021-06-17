@@ -1,0 +1,123 @@
+/* css */
+
+body {
+    background-color: #c5c4c5;
+    background-image: url(imagens/foto1.png);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    background-size: 40%;
+    color: rgb(0, 0, 0);
+   }
+
+textarea{
+    resize: none;
+}
+
+#cifraEncode{
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-left: 40%;
+    border-width:8px;
+    border-style:double;
+    border-color:white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px white;
+}
+#cifraDecode{
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-left: 40%;
+    border-width:8px;
+    border-style:double;
+    border-color:white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px white;
+}
+
+#textoBemVindo {
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-left: 40%;
+    font-family:'Noto Sans SC', sans-serif;
+    }
+
+#seletorInputEncode{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+
+#seletorInputDecode{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#mensagemInsiraTextoEncode{
+    text-align: left;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#mensagemInsiraTextoDecode{
+    text-align: left;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#inputTextoParaCodificar{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#inputTextoParaDecodificar{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#botaoCodificar{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#botaoDecodificar{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#inputTextoCodificado{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+#inputTextoDecodificado{
+    text-align: justify;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-family:'Noto Sans SC', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    left:20;
+}
