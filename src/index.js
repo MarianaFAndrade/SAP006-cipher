@@ -1,12 +1,11 @@
 import cipher from './cipher.js';
 
-//ENCODE
+
 const mensagemEncode = document.getElementById('inputTextoParaCodificar')
 const chaveDeslocamentoEncode = document.getElementById('seletorInputEncode')
 const botao = document.getElementById('botaoCodificar')
 const resultado = document.getElementById('inputTextoCodificado')
 
-// DECODE
 const mensagemDecode = document.getElementById('inputTextoParaDecodificar')
 const chaveDeslocamentoDecode = document.getElementById('seletorInputDecode')
 const botaoDecode = document.getElementById('botaoDecodificar')
